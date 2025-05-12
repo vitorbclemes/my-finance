@@ -7,6 +7,10 @@
   --font-sans: 'Lato', sans-serif;
 }
 
+@theme {
+  --color-light-gray: #DBDBDB
+}
+
 /* Support to dark mode (TO-DO)
 @media (prefers-color-scheme: dark) {
   :root {
@@ -35,4 +39,16 @@ body {
 :focus {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
+}
+
+.icon {
+  font-size: 32px !important;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.2s ease;
+}
+
+.icon:hover {
+  color: var(--background);
+  background-color: var(--foreground);
 }

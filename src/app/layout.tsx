@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/ui/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "My Finance",
@@ -13,8 +14,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;700&display=swap" rel="stylesheet" />
+      </head>
+      <body className="flex h-screen">
+        <div>
+          <Navbar />
+        </div>
+        <main className="flex-1 p-4 overflow-y-auto">
+          {children}
+        </main>
       </body>
     </html>
   );
