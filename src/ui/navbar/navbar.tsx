@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <nav className='flex flex-col justify-between border-r border-light-gray items-center p-4 w-24 h-screen'>
         <i className='material-symbols-outlined icon'>account_circle</i>
@@ -12,3 +12,5 @@ export default function Navbar() {
     </nav>
   )
 }
+
+export default Navbar;
