@@ -11,7 +11,7 @@ const Table = ({ rows,style }: TableProps) => {
             <thead>
                 <tr>
                     {headers.map((item, index) => (
-                        <th key={index} className="px-4 py-2 text-left font-medium">
+                        <th key={index} className="px-4 py-2 text-left font-medium max-h-10">
                             {item}
                         </th>
                     ))}
@@ -19,7 +19,7 @@ const Table = ({ rows,style }: TableProps) => {
             </thead>
             <tbody>
                 {rows.map((row, rowIndex) => (
-                    <tr key={rowIndex} className={`even:bg-white odd:bg-gray-100`}>
+                    <tr key={rowIndex} className={`even:bg-white odd:bg-gray-100 max-h-10`}>
                         {headers.map((column, colIndex) => (
                             <td key={colIndex} className="px-4 py-2 text-left">
                                 {row[column] || "-"} {/* Accessing the value for each row and column */}

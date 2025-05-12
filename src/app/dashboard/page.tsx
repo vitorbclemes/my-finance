@@ -38,7 +38,7 @@ export default function Home() {
       <div className="flex flex-col">
         <div className="flex flex-row gap-3 p-2">
           <input type="date" className="w-3xs"/>
-          <div className="flex flex-row border px-4 py-2 border-light-gray items-center justify-center cursor-pointer hover:border-gray-700">
+          <div className="flex flex-row border px-4 py-2 border-light-gray rounded-sm items-center justify-center cursor-pointer hover:border-gray-700">
             <span className="leading-3">Filters</span>
             <i className="material-symbols-outlined !text-1xl ml-2">filter_list</i>
           </div>
