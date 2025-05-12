@@ -37,7 +37,6 @@ body {
 }
 
 :focus {
-  outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
 
@@ -50,5 +49,14 @@ body {
 
 .icon:hover {
   color: var(--background);
-  background-color: var(--foreground);
+  background-color: var(--foreground);    
+}
+
+input[type="date"] {
+  padding: 8px;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
 }
